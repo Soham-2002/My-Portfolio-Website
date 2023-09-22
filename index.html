@@ -9,173 +9,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;500;700&display=swap"
     rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      background-color: rgb(0, 0, 33);
-      color: white;
-      font-family: 'Poppins', sans-serif;
-    }
-
-    nav {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      height: 80px;
-      background-color: rgb(18, 18, 62);
-    }
-
-    nav ul {
-      display: flex;
-      justify-content: center;
-    }
-
-    nav ul li {
-      list-style: none;
-      margin: 0 23px;
-    }
-
-    nav ul li a {
-      text-decoration: none;
-      color: white;
-    }
-
-    nav ul li a:hover {
-      color: rgb(153, 153, 226);
-      font-size: 1.01rem;
-    }
-
-    main hr {
-      /* color: red; */
-      border: 0;
-      background: #9c97f1;
-      height: 1px;
-      margin: 60px 84px;
-    }
-
-    footer {
-      background-color: #0e0e1a;
-    }
-
-    .left {
-      font-size: 1.5rem;
-    }
-
-    .firstsection {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      margin: 130px 0;
-    }
-
-    .firstsection>div {
-      width: 30%;
-    }
-
-    .leftsection {
-      font-size: 2.6rem;
-    }
-
-    .leftsection .buttons {
-      padding: 50px 0;
-    }
-
-    .leftsection .btn {
-      padding: 12px;
-      background-color: #1e2167;
-      color: white;
-      border: 2px solid white;
-      border-radius: 6px;
-      font-size: 20px;
-      cursor: pointer;
-    }
-
-    .rightsection img {
-      width: 80%;
-    }
-
-    .myname {
-      color: rgb(170, 107, 228);
-    }
-
-    #element {
-      color: rgb(170, 107, 228);
-    }
-
-    .secondsection {
-      max-width: 80vw;
-      margin: auto;
-      height: 80vh;
-    }
-
-    .secondsection h1 {
-      font-size: 1.9rem;
-    }
-
-    .text-gray {
-      color: gray;
-    }
-
-    .secondsection .box {
-      background-color: white;
-      height: 2px;
-      margin: 56px 0;
-      display: flex;
-    }
-
-    .secondsection .vertical {
-      height: 93px;
-      width: 1px;
-      background-color: white;
-      margin: 0 100px;
-    }
-
-    .image-top {
-      width: 23px;
-      position: relative;
-      top: -32px;
-      left: -9px;
-    }
-
-    .vertical-title {
-      position: relative;
-      top: 75px;
-      width: 120px;
-      font-size: 14px;
-    }
-
-    .vertical-desc {
-      position: relative;
-      top: 86px;
-      color: gray;
-      width: 120px;
-      font-size: 9px;
-    }
-
-    .footer {
-      display: flex;
-      justify-content: space-evenly;
-      padding: 23px 112px;
-    }
-
-    .footer ul {
-      list-style: none;
-    }
-
-    .footer>div {
-      width: 223px;
-    }
-
-    footer .footer-rights {
-      text-align: center;
-      color: gray;
-      padding: 12px 0;
-    }
-  </style>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css'>
+  <link rel="stylesheet" href="style/style.css">
 </head>
 
 <body>
@@ -184,31 +19,93 @@
       <div class="left">Soham's Portfolio</div>
       <div class="right">
         <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/">About</a></li>
-          <li><a href="/">Services</a></li>
-          <li><a href="/">Projects</a></li>
-          <li><a href="/">Contact Me</a></li>
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#About-Me">About</a></li>
+          <li><a href="#Skills">Skills</a></li>
+          <li><a href="#Projects">Projects</a></li>
+          <li><a href="#Contact-me">Contact Me</a></li>
         </ul>
       </div>
     </nav>
   </header>
   <main>
-    <section class="firstsection">
+    <section class="firstsection section-heading">
       <div class="leftsection">
         Hi,My name is <span class="myname">Soham</span>
         <div>and Iam a Passionate</div>
         <span id="element"></span>
         <div class="buttons">
-          <button class="btn">Download Resume</button>
-          <button class="btn">Visit Github</button>
+          <button
+            onclick="document.location='https://drive.google.com/file/d/1UH67zOkffVM-QD4_PGt_bQjxABAr6rBv/view?usp=drivesdk'"
+            class="btn">View CV</button>
+          <button onclick="document.location='https://github.com/Soham-2002'" class="btn">Visit Github</button>
         </div>
       </div>
       <div class="rightsection">
-        <img src="photos/pic.png" alt="" class="src">
+        <img src="photos/portfolio_website_pic.jpg" alt="" class="src">
       </div>
     </section>
     <hr>
+
+    <section id="About-Me section-heading">
+      <div class="section-heading">
+        <h1>About &#160; Me</h1>
+        <h5>Who &#160; am &#160; I</h5>
+      </div>
+    </section>
+
+    <hr>
+
+    <section id="Skills">
+      <div class="section-heading">
+        <h1>My &#160; Skills</h1>
+        <h5>What &#160; I &#160; know</h5>
+      </div>
+    </section>
+
+    <hr>
+
+    <section id="Projects">
+      <div class="section-heading">
+        <h1>My &#160; Projects</h1>
+        <h5>What &#160; I &#160; have &#160; done</h5>
+      </div>
+    </section>
+
+    <hr>
+
+    <section id="Contact-me">
+      <div class="section-heading">
+        <h1>Contact &#160; me</h1>
+        <h5>get &#160; in &#160; touch</h5>
+      </div>
+      <div class="social-media">
+        <ul class="social-media-ul">
+          <li onclick="document.location='https://www.facebook.com/soham.kundu.399/'" class="social-media-li"><a
+              href="#" class="social-media-a"><i class="fa-brands fa-facebook-f facebook-f"></i></a></li>
+          <li onclick="document.location='https://twitter.com/SohamKu41186275'" class="social-media-li"><a href="#"
+              class="social-media-a"><i class="fa-brands fa-twitter twitter"></i></a></li>
+          <li onclick="document.location='https://www.instagram.com/soham.kundu.399/'" class="social-media-li"><a
+              href="#" class="social-media-a"><i class="fa-brands fa-instagram instagram"></i></a></li>
+          <li onclick="document.location='https://www.linkedin.com/in/soham-kundu-93abba1bb/'" class="social-media-li">
+            <a href="#" class="social-media-a"><i class="fa-brands fa-linkedin linkedin"></i></a></li>
+          <li onclick="document.location='https://wa.me/qr/G7AIF5TVJ45FO1'" class="social-media-li"><a href="#"
+              class="social-media-a"><i class="fa-brands fa-whatsapp whatsapp"></i></a></li>
+          <li onclick="document.location='https://t.me/soham_kundu_399'" class="social-media-li"><a href="#"
+              class="social-media-a"><i class="fa-brands fa-telegram telegram"></i></a></li>
+          <li onclick="document.location='https://Discordapp.com/users/854290163731660811'" class="social-media-li"><a
+              href="#" class="social-media-a"><i class="fa-brands fa-discord discord"></i></a></li>
+        </ul>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-div">
+        <p>Created by <a href="">@soham-kundu</a> | &#169;2023 all rights are reserved.</p>
+      </div>
+    </footer>
+
+    <!--
     <section class="secondsection">
       <span class="text-gray">What I have done so far</span>
       <h1>Work Experience</h1>
@@ -270,10 +167,28 @@
         </div>
       </div>
 
+      <div class="long">
+        Services
+      </div>
+
+      <hr>
+
+      <div class="long">
+        Projects
+      </div>
+
+      <hr>
+
+      <section id="Contact">
+        <div class="long">
+          Contact Me
+        </div>
+      </section>
+
     </section>
-
+    -->
   </main>
-
+  <!--
   <footer>
     <div class="footer">
       <div class="footer-first">
@@ -287,36 +202,124 @@
           <li>Contact</li>
         </ul>
       </div>
-      <div class="footer-third">
-        <ul>
-          <li>Home</li>
-          <li>Aboute</li>
-          <li>Services</li>
-          <li>Contact</li>
-        </ul>
-      </div>
-      <div class="footer-fourth">
-        <ul>
-          <li>Home</li>
-          <li>Aboute</li>
-          <li>Services</li>
-          <li>Contact</li>
-        </ul>
-      </div>
+
     </div>
     <div class="footer-rights">
       Copyright &#169; sohamsportfolio.com | All rights reserved
     </div>
   </footer>
-
+  -->
   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
   <!-- Setup and start animation! -->
   <script>
     var typed = new Typed('#element', {
-      strings: ['Web Developer', 'Pro Coder', 'Web Designer', 'Problem Solver'],
+      strings: ['Web Developer', 'Programmer'],
       typeSpeed: 50,
     });
   </script>
 </body>
 
 </html>
+<!--
+    <footer>
+    <div class="footer">
+      <div class="footer-first">
+        <h3>Soham's Developer Portfolio</h3>
+      </div>
+      <div class="footer-second">
+        <ul>
+          <li>Home</li>
+          <li>Aboute</li>
+          <li>Services</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="footer-rights">
+      Copyright &#169; sohamsportfolio.com | All rights reserved
+    </div>
+    </footer>
+-->
+<!--
+    <section class="secondsection">
+      <span class="text-gray">What I have done so far</span>
+      <h1>Work Experience</h1>
+
+      <div class="box">
+        <div class="vertical">
+          <img class="image-top" src="photos/in.png" alt="" class="src">
+          <div class="vertical-title">
+            HTML Developer (2010-2012)
+          </div>
+          <div class="vertical-desc">
+            Here
+          </div>
+        </div>
+        <div class="vertical">
+          <img class="image-top" src="photos/what.png" alt="" class="src">
+          <div class="vertical-title">
+            HTML Developer (2010-2012)
+          </div>
+          <div class="vertical-desc">
+            Here
+          </div>
+        </div>
+        <div class="vertical">
+          <img class="image-top" src="photos/insta.png" alt="" class="src">
+          <div class="vertical-title">
+            HTML Developer (2010-2012)
+          </div>
+          <div class="vertical-desc">
+            Here
+          </div>
+        </div>
+        <div class="vertical">
+          <img class="image-top" src="photos/feb.png" alt="" class="src">
+          <div class="vertical-title">
+            HTML Developer (2010-2012)
+          </div>
+          <div class="vertical-desc">
+            Here
+          </div>
+        </div>
+        <div class="vertical">
+          <img class="image-top" src="photos/tw.png" alt="" class="src">
+          <div class="vertical-title">
+            HTML Developer (2010-2012)
+          </div>
+          <div class="vertical-desc">
+            Here
+          </div>
+        </div>
+        <div class="vertical">
+          <img class="image-top" src="photos/you.png" alt="" class="src">
+          <div class="vertical-title">
+            HTML Developer (2010-2012)
+          </div>
+          <div class="vertical-desc">
+            Here
+          </div>
+        </div>
+      </div>
+
+      <div class="long">
+        Services
+      </div>
+
+      <hr>
+
+      <div class="long">
+        Projects
+      </div>
+
+      <hr>
+
+      <section id="Contact">
+        <div class="long">
+          Contact Me
+        </div>
+      </section>
+
+    </section>
+-->
