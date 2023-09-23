@@ -9,52 +9,55 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 80px;
+.header {
+  height: 10vh;
   background-color: rgb(18, 18, 62);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 100;
 }
 
-nav ul {
+.right {
   display: flex;
+  align-items: center;
+}
+
+.left {
+  font-size: 2.5rem;
+
+  display: flex;
+  align-items: center;
+}
+
+.right-ul {
+  display: flex;
+  align-items: center;
   justify-content: center;
 }
 
-nav ul li {
+.right-li {
   list-style: none;
   margin: 0 23px;
 }
 
-nav ul li a {
+.right-li a {
   text-decoration: none;
   color: white;
+  font-size: 1.6rem;
 }
 
-nav ul li a:hover {
+.right-li a:hover {
   color: rgb(153, 153, 226);
-  font-size: 1.01rem;
+  text-decoration: underline;
 }
 
-/*
-main hr {
-  border: 0;
-  background: #9c97f1;
-  height: 1px;
-  margin: 60px 84px;
-}
-*/
-/*
-footer {
-  background-color: #0e0e1a;
-}
-
-
-.left {
-  font-size: 1.5rem;
-}
-*/
 .firstsection {
   display: flex;
   justify-content: space-around;
@@ -62,45 +65,43 @@ footer {
   margin: 110px 0;
 }
 
+.leftsection {
+  font-size: 2.6rem;
+  padding-left: 13vh;
+}
+
 .firstsection>div {
   width: 30%;
 }
 
-.leftsection {
-  font-size: 2.6rem;
-}
-
-.leftsection .buttons {
-  padding: 50px 0;
-}
-
-.leftsection .btn {
-  padding: 12px;
-  background-color: #1e2167;
-  color: white;
-  border: 2px solid white;
-  border-radius: 6px;
-  font-size: 20px;
-  cursor: pointer;
+.rightsection {
+  padding-right: 13vh;
 }
 
 .rightsection img {
   width: 80%;
+  /*
   border: 5px solid #555;
   border-radius: 300px;
+  */
 }
 
 .myname {
   color: rgb(170, 107, 228);
+  font-size: 5rem;
 }
 
 #element {
   color: rgb(170, 107, 228);
 }
 
-.section-heading {
-  height: 60vh;
-  text-align: center;
+.section-f-f {
+  margin-top: 15vh;
+  height: 80vh;
+}
+
+.section-five {
+  height: 65vh;
 }
 
 .footer {
@@ -108,7 +109,7 @@ footer {
   box-sizing: border-box;
   justify-content: center;
   align-items: center;
-  height: 5vh;
+  height: 8vh;
   background: #000;
   margin-top: 5vh;
 }
@@ -209,14 +210,169 @@ footer {
   height: 100%;
 }
 
+.footer-div a {
+  text-decoration: none;
+  color: magenta;
+}
 
+:root {
+  --page-background: 277deg, 55%, 12%;
+}
 
+.btn {
+  --text-base: 277deg, 55%, 40%;
+  --text-hover: 307deg, 72%, 86%;
+  --shadow-start: 52deg, 100%, 72%;
+  --shadow-end: 282deg, 90%, 50%;
+  --shadow-inner: 277deg, 90%, 62%;
+  all: unset;
+  color: hsla(var(--text-base), 1);
+  font: 700 1.125rem/1.2 Raleway, sans-serif;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0.85em;
+  max-width: 100%;
+  width: 12em;
+  background: inherit;
+  background-clip: padding-box;
+  border: 5px solid hsla(var(--text-base), 1);
+  border-radius: 2em;
+  cursor: pointer;
+  position: relative;
+  transition: 0.25s ease-out;
+}
 
+.btn::before,
+.btn::after {
+  content: "";
+  border-radius: inherit;
+  transition: inherit;
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
 
+.btn::before {
+  inset: -0.2em;
+  z-index: -1;
+  background: linear-gradient(hsla(var(--shadow-start), 1), hsla(var(--shadow-end), 1));
+  filter: blur(1.2em) saturate(1.2);
+  transform-origin: bottom;
+  transform: scaleY(0.5);
+  opacity: 0;
+}
 
+.btn::after {
+  box-shadow: inset 0 0 0 1px #fff, 0 0 0 4px rgba(255, 255, 255, 0.7), 1px 1px 0 4px #fff;
+  mix-blend-mode: overlay;
+  opacity: 0;
+}
+
+.btn:hover,
+.btn:focus {
+  color: hsla(var(--text-hover), 1);
+  border-color: transparent;
+  box-shadow: inset 0 1.4em 0 hsla(var(--shadow-inner), 0.1), inset 0 0 1.4em hsla(var(--shadow-inner), 0.32), 0 1px 1px hsla(var(--shadow-inner), 0.32);
+}
+
+.btn:hover::before,
+.btn:hover::after,
+.btn:focus::before,
+.btn:focus::after {
+  transform: none;
+  opacity: 1;
+}
+
+.buttons {
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  place-content: center;
+  place-items: center;
+  padding: 3em;
+  position: relative;
+  z-index: 1;
+}
+
+.left-btn {
+  margin-right: 30px;
+}
+
+.right-btn {
+  margin-left: 30px;
+}
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 30px;
+  text-align: center;
+}
+
+.section-second-flexbox {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 15vh;
+}
+
+.section-second-left {
+  display: grid;
+  place-content: center;
+}
+
+.section-second-left img {
+  height: 500px;
+  --s: 10px;
+  /* control the size */
+  padding: var(--s);
+  border: calc(2*var(--s)) solid #0000;
+  outline: 1px solid white;
+  outline-offset: calc(-1*var(--s));
+  background: conic-gradient(from 90deg at 1px 1px, #0000 25%, white 0);
+}
+
+.section-second-right p {
+  padding: 80px 200px;
+  font-size: 30px;
+}
 
 
 /*
+.leftsection .buttons {
+  padding: 50px 0;
+}
+
+.leftsection .btn {
+  padding: 12px;
+  background-color: #1e2167;
+  color: white;
+  border: 2px solid white;
+  border-radius: 6px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.section-heading {
+  text-align: center;
+}
+
+main hr {
+  border: 0;
+  background: #9c97f1;
+  height: 1px;
+  margin: 60px 84px;
+}
+
+footer {
+  background-color: #0e0e1a;
+}
+
 .secondsection {
   max-width: 80vw;
   margin: auto;

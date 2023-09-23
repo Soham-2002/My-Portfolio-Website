@@ -4,216 +4,136 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Soham_Portfolio</title>
+  <title>Soham Kundu Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="/photos/MyLoGo.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;500;700&display=swap"
     rel="stylesheet">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Raleway:wght@700&amp;display=swap'>
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css'>
   <link rel="stylesheet" href="style/style.css">
 </head>
 
 <body>
-  <header>
-    <nav>
-      <div class="left">Soham's Portfolio</div>
-      <div class="right">
-        <ul>
-          <li><a href="#Home">Home</a></li>
-          <li><a href="#About-Me">About</a></li>
-          <li><a href="#Skills">Skills</a></li>
-          <li><a href="#Projects">Projects</a></li>
-          <li><a href="#Contact-me">Contact Me</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
+  <div class="header">
+    <div class="left">
+      <pre>Soham's Portfolio</pre>
+    </div>
+    <div class="right">
+      <ul class="right-ul">
+        <li class="right-li"><a href="#Home">Home</a></li>
+        <li class="right-li"><a href="#About-Me">About</a></li>
+        <li class="right-li"><a href="#Skills">Skills</a></li>
+        <li class="right-li"><a href="#Projects">Projects</a></li>
+        <li class="right-li"><a href="#Contact-me">Contact Me</a></li>
+      </ul>
+    </div>
+  </div>
   <main>
-    <section class="firstsection section-heading">
+    <section id="Home"></section>
+    <br><br>
+
+    <section class="firstsection section-f-f">
       <div class="leftsection">
-        Hi,My name is <span class="myname">Soham</span>
-        <div>and Iam a Passionate</div>
+        Hi,My name is
+        <div><span class="myname"><b>Soham Kundu</b></span></div>
+        <div>and I am a Passionate</div>
         <span id="element"></span>
+        <br>
         <div class="buttons">
           <button
             onclick="document.location='https://drive.google.com/file/d/1UH67zOkffVM-QD4_PGt_bQjxABAr6rBv/view?usp=drivesdk'"
-            class="btn">View CV</button>
-          <button onclick="document.location='https://github.com/Soham-2002'" class="btn">Visit Github</button>
+            class="btn left-btn">View CV</button>
+          <button onclick="document.location='https://github.com/Soham-2002'" class="btn right-btn">Visit
+            Github</button>
         </div>
       </div>
       <div class="rightsection">
-        <img src="photos/portfolio_website_pic.jpg" alt="" class="src">
+        <img src="photos/pic.png" alt="" class="src">
       </div>
     </section>
-    <hr>
 
-    <section id="About-Me section-heading">
+    <section id="About-Me"></section>
+    <br>
+
+    <section class="section-f-f">
+      <h1>About Me</h1>
+      <h3>---Who am I---</h3>
+      <div class="section-heading section-second-flexbox">
+        <div class="section-second-left">
+          <img src="photos/portfolio_website_pic.jpg" alt="My Photo">
+        </div>
+        <div class="section-second-right">
+          <p>I am <b>Soham Kundu</b> currently pursuing B.tech degree in Computer Science and Engineering. I love to
+            explore
+            new technologies, I am a hardworking and determined candidate eager to gather real-life project experiences.
+            I am experienced in JavaScript. I am interested in gathering experience in front-end as well as backend
+            development.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="Skills"></section>
+
+    <section class="section-f-f">
       <div class="section-heading">
-        <h1>About &#160; Me</h1>
-        <h5>Who &#160; am &#160; I</h5>
+        <h1>My Skills</h1>
+        <h3>-What I know-</h3>
       </div>
     </section>
 
-    <hr>
+    <section id="Projects"></section>
 
-    <section id="Skills">
+    <section class="section-f-f">
       <div class="section-heading">
-        <h1>My &#160; Skills</h1>
-        <h5>What &#160; I &#160; know</h5>
+        <h1>My Projects</h1>
+        <h3>-What I have done-</h3>
       </div>
     </section>
 
-    <hr>
+    <section id="Contact-me"></section>
 
-    <section id="Projects">
+    <section class="section-five section-f-f">
       <div class="section-heading">
-        <h1>My &#160; Projects</h1>
-        <h5>What &#160; I &#160; have &#160; done</h5>
+        <h1>Contact me</h1>
+        <h3>---get in touch---</h3>
       </div>
     </section>
 
-    <hr>
-
-    <section id="Contact-me">
-      <div class="section-heading">
-        <h1>Contact &#160; me</h1>
-        <h5>get &#160; in &#160; touch</h5>
-      </div>
-      <div class="social-media">
-        <ul class="social-media-ul">
-          <li onclick="document.location='https://www.facebook.com/soham.kundu.399/'" class="social-media-li"><a
-              href="#" class="social-media-a"><i class="fa-brands fa-facebook-f facebook-f"></i></a></li>
-          <li onclick="document.location='https://twitter.com/SohamKu41186275'" class="social-media-li"><a href="#"
-              class="social-media-a"><i class="fa-brands fa-twitter twitter"></i></a></li>
-          <li onclick="document.location='https://www.instagram.com/soham.kundu.399/'" class="social-media-li"><a
-              href="#" class="social-media-a"><i class="fa-brands fa-instagram instagram"></i></a></li>
-          <li onclick="document.location='https://www.linkedin.com/in/soham-kundu-93abba1bb/'" class="social-media-li">
-            <a href="#" class="social-media-a"><i class="fa-brands fa-linkedin linkedin"></i></a></li>
-          <li onclick="document.location='https://wa.me/qr/G7AIF5TVJ45FO1'" class="social-media-li"><a href="#"
-              class="social-media-a"><i class="fa-brands fa-whatsapp whatsapp"></i></a></li>
-          <li onclick="document.location='https://t.me/soham_kundu_399'" class="social-media-li"><a href="#"
-              class="social-media-a"><i class="fa-brands fa-telegram telegram"></i></a></li>
-          <li onclick="document.location='https://Discordapp.com/users/854290163731660811'" class="social-media-li"><a
-              href="#" class="social-media-a"><i class="fa-brands fa-discord discord"></i></a></li>
-        </ul>
-      </div>
-    </section>
+    <div class="social-media">
+      <ul class="social-media-ul">
+        <li onclick="document.location='https://www.facebook.com/soham.kundu.399/'" class="social-media-li"><a href="#"
+            class="social-media-a"><i class="fa-brands fa-facebook-f facebook-f"></i></a></li>
+        <li onclick="document.location='https://twitter.com/SohamKu41186275'" class="social-media-li"><a href="#"
+            class="social-media-a"><i class="fa-brands fa-twitter twitter"></i></a></li>
+        <li onclick="document.location='https://www.instagram.com/soham.kundu.399/'" class="social-media-li"><a href="#"
+            class="social-media-a"><i class="fa-brands fa-instagram instagram"></i></a></li>
+        <li onclick="document.location='https://www.linkedin.com/in/soham-kundu-93abba1bb/'" class="social-media-li">
+          <a href="#" class="social-media-a"><i class="fa-brands fa-linkedin linkedin"></i></a>
+        </li>
+        <li onclick="document.location='https://wa.me/qr/G7AIF5TVJ45FO1'" class="social-media-li"><a href="#"
+            class="social-media-a"><i class="fa-brands fa-whatsapp whatsapp"></i></a></li>
+        <li onclick="document.location='https://t.me/soham_kundu_399'" class="social-media-li"><a href="#"
+            class="social-media-a"><i class="fa-brands fa-telegram telegram"></i></a></li>
+        <li onclick="document.location='https://Discordapp.com/users/854290163731660811'" class="social-media-li"><a
+            href="#" class="social-media-a"><i class="fa-brands fa-discord discord"></i></a></li>
+      </ul>
+    </div>
 
     <footer class="footer">
       <div class="footer-div">
-        <p>Created by <a href="">@soham-kundu</a> | &#169;2023 all rights are reserved.</p>
+        <p>Created by <a href="https://github.com/Soham-2002" target="blank"> @soham-kundu</a> | 2023 all rights
+          are reserved.</p>
       </div>
     </footer>
-
-    <!--
-    <section class="secondsection">
-      <span class="text-gray">What I have done so far</span>
-      <h1>Work Experience</h1>
-
-      <div class="box">
-        <div class="vertical">
-          <img class="image-top" src="photos/in.png" alt="" class="src">
-          <div class="vertical-title">
-            HTML Developer (2010-2012)
-          </div>
-          <div class="vertical-desc">
-            Here
-          </div>
-        </div>
-        <div class="vertical">
-          <img class="image-top" src="photos/what.png" alt="" class="src">
-          <div class="vertical-title">
-            HTML Developer (2010-2012)
-          </div>
-          <div class="vertical-desc">
-            Here
-          </div>
-        </div>
-        <div class="vertical">
-          <img class="image-top" src="photos/insta.png" alt="" class="src">
-          <div class="vertical-title">
-            HTML Developer (2010-2012)
-          </div>
-          <div class="vertical-desc">
-            Here
-          </div>
-        </div>
-        <div class="vertical">
-          <img class="image-top" src="photos/feb.png" alt="" class="src">
-          <div class="vertical-title">
-            HTML Developer (2010-2012)
-          </div>
-          <div class="vertical-desc">
-            Here
-          </div>
-        </div>
-        <div class="vertical">
-          <img class="image-top" src="photos/tw.png" alt="" class="src">
-          <div class="vertical-title">
-            HTML Developer (2010-2012)
-          </div>
-          <div class="vertical-desc">
-            Here
-          </div>
-        </div>
-        <div class="vertical">
-          <img class="image-top" src="photos/you.png" alt="" class="src">
-          <div class="vertical-title">
-            HTML Developer (2010-2012)
-          </div>
-          <div class="vertical-desc">
-            Here
-          </div>
-        </div>
-      </div>
-
-      <div class="long">
-        Services
-      </div>
-
-      <hr>
-
-      <div class="long">
-        Projects
-      </div>
-
-      <hr>
-
-      <section id="Contact">
-        <div class="long">
-          Contact Me
-        </div>
-      </section>
-
-    </section>
-    -->
   </main>
-  <!--
-  <footer>
-    <div class="footer">
-      <div class="footer-first">
-        <h3>Soham's Developer Portfolio</h3>
-      </div>
-      <div class="footer-second">
-        <ul>
-          <li>Home</li>
-          <li>Aboute</li>
-          <li>Services</li>
-          <li>Contact</li>
-        </ul>
-      </div>
 
-    </div>
-    <div class="footer-rights">
-      Copyright &#169; sohamsportfolio.com | All rights reserved
-    </div>
-  </footer>
-  -->
   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
   <!-- Setup and start animation! -->
   <script>
-    var typed = new Typed('#element', {
-      strings: ['Web Developer', 'Programmer'],
+    let typed = new Typed('#element', {
+      strings: ['Programmer', 'Problem Solver', 'Web Developer'],
       typeSpeed: 50,
     });
   </script>
