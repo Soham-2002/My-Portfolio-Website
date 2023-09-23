@@ -30,7 +30,8 @@ body {
 }
 
 .left {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
+  padding-left: 18vh;
 
   display: flex;
   align-items: center;
@@ -50,7 +51,7 @@ body {
 .right-li a {
   text-decoration: none;
   color: white;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 
 .right-li a:hover {
@@ -62,20 +63,21 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 110px 0;
 }
 
 .leftsection {
-  font-size: 2.6rem;
-  padding-left: 13vh;
+  margin-top: 15vh;
+  font-size: 2rem;
+  padding-left: 18vh;
 }
 
 .firstsection>div {
-  width: 30%;
+  width: 50%;
 }
 
 .rightsection {
   padding-right: 13vh;
+  padding-top: 5vh;
 }
 
 .rightsection img {
@@ -88,7 +90,7 @@ body {
 
 .myname {
   color: rgb(170, 107, 228);
-  font-size: 5rem;
+  font-size: 4rem;
 }
 
 #element {
@@ -101,7 +103,7 @@ body {
 }
 
 .section-five {
-  height: 65vh;
+  height: 70vh;
 }
 
 .footer {
@@ -145,7 +147,7 @@ body {
 }
 
 .fa-brands {
-  font-size: 6em;
+  font-size: 4em;
   color: #222;
 }
 
@@ -154,7 +156,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  font-size: 6em;
+  font-size: 4em;
   height: 0;
   overflow: hidden;
   transition: 0.5s ease-in-out;
@@ -294,6 +296,7 @@ body {
   place-items: center;
   padding: 3em;
   position: relative;
+  padding-left: 0px;
   z-index: 1;
 }
 
@@ -306,28 +309,35 @@ body {
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 40px;
   text-align: center;
 }
 
 h3 {
-  font-size: 30px;
+  font-size: 23px;
   text-align: center;
 }
 
 .section-second-flexbox {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-top: 15vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: top;
 }
 
 .section-second-left {
-  display: grid;
-  place-content: center;
+  width: 50%;
+  padding: 14vh 5vh 14vh 35vh;
+}
+
+.section-second-right {
+  width: 50%;
+  padding: 20vh 18vh 14vh 20vh;
+  font-size: 20px;
 }
 
 .section-second-left img {
-  height: 500px;
+  height: 300px;
   --s: 10px;
   /* control the size */
   padding: var(--s);
@@ -337,10 +347,91 @@ h3 {
   background: conic-gradient(from 90deg at 1px 1px, #0000 25%, white 0);
 }
 
-.section-second-right p {
-  padding: 80px 200px;
+.section-five-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.section-five-flex-left {
+  width: 50%;
+  padding: 10vh 15vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.section-five-flex-right {
+  width: 50%;
+  padding: 7vh 15vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.icon {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+
+.i-left {
+  padding-top: 10px;
+  height: 20px;
+}
+
+i {
+  color: #16b9defa;
+}
+
+.i-left>i {
+  padding-bottom: 0px;
+}
+
+.loc {
+  padding-left: 10px;
+}
+
+.con {
+  padding-left: 9px;
+}
+
+.i-right p {
+  padding-left: 20px;
+  line-height: 19px;
+}
+
+.touch {
   font-size: 30px;
 }
+
+.b-touch {
+  color: #16b9defa;
+}
+
+.c-me {
+  font-size: 30px;
+  color: #16b9defa;
+}
+
+.form-control {
+  padding-right: 10vh;
+}
+
+.send-btn {
+  background-color: #16b9defa;
+  color: white;
+  border: none;
+  padding: 5px 30px;
+  margin-right: 50px;
+}
+
+
+
+
 
 
 /*
