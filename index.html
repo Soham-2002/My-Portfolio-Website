@@ -32,6 +32,7 @@
   </div>
   <main>
     <section id="Home"></section>
+    <br>
 
     <section class="firstsection section-f-f">
       <div class="leftsection">
@@ -88,10 +89,104 @@
 
     <section id="Projects"></section>
 
-    <section class="section-f-f">
-      <div class="section-heading">
-        <h1>My Projects</h1>
-        <h3>-What I have done-</h3>
+    <section class="section-four section-f-f">
+      <h1>My Projects</h1>
+      <h3>-What I have done-</h3>
+      <div class="section-heading section-four-flex">
+        <div class="pro weather-app">
+          <div class="pro-logo">
+            <img class="pro-logo-img" src="photos/weatherapp.jpg" alt="Weather App">
+          </div>
+          <br>
+          <div class="pro-title t-w"><b>MY WEATHER APP</b></div>
+          <div>
+            <p><br>Allows users to search for Temperature, Max Temperature,
+              Min Temperature, Wind Speed and Humidity for any location.
+              <br><br>Used Weather-API(V3) for weather data retrieval.
+              <br><br>
+            </p>
+          </div>
+          <div class="pro-tech">
+            <button class="bon">JavaScript</button>
+            <button class="bon">RapidAPI</button>
+          </div>
+          <br>
+          <div class="pro-site">
+            <a onclick="document.location='https://soham-2002.github.io/My-Weather-App/'" class="bttn" href="#0">VIEW
+              SITE</a>
+          </div>
+        </div>
+        <div class="pro mytodo">
+          <div class="pro-logo">
+            <img class="pro-logo-img" src="photos/todo-list.jpg" alt="My Todo">
+          </div>
+          <br>
+          <div class="pro-title"><b>MY TODO</b></div>
+          <div>
+            <p><br>This project enables users to Add, Update and Delete tasks(todos).
+              <br><br>SQLAlchemy is used for managing the database.
+              <br><br>
+            </p>
+          </div>
+          <div class="pro-tech">
+            <button class="bon">Python</button>
+            <button class="bon">Flask</button>
+          </div>
+          <br>
+          <div class="pro-site">
+            <a onclick="document.location='http://soham2002.pythonanywhere.com/'" class="bttn" href="#0">VIEW SITE</a>
+          </div>
+        </div>
+        <div class="pro amazon">
+          <div class="pro-logo">
+            <img class="pro-logo-img" src="photos/A-Zclone.jpg" alt="Amazon Clone">
+          </div>
+          <br>
+          <div class="pro-title"><b>AMAZON CLONE</b></div>
+          <div>
+            <p><br>A front-end & back-end web development project inspired by
+              Amazon&sbquo;s design.
+              <br><br> Many product is added to this project.
+              <br>User can add the the product to the cart, order the items and also track the packages.
+              <br><br>
+            </p>
+          </div>
+          <div class="pro-tech">
+            <button class="bon">HTML</button>
+            <button class="bon">CSS</button>
+            <button class="bon">JavaScript</button>
+          </div>
+          <br>
+          <div class="pro-site">
+            <a onclick="document.location='https://soham-2002.github.io/Amazon_Clone/'" class="bttn" href="#0">VIEW
+              SITE</a>
+          </div>
+        </div>
+        <div class="pro rpsg">
+          <div class="pro-logo">
+            <img class="pro-logo-img" src="photos/rps.jpg" alt="Rock Paper Scissors Game">
+          </div>
+          <br>
+          <div class="pro-title"><b>ROCK PAPER SCISSORS GAME</b></div>
+          <div>
+            <p><br>Follows the standard rules of Rock Paper Scissors: Rock beats
+              Scissors, Paper beats Rock and Scissors beaks Paper.
+              <br><br>Keeps track of the score for Wins, Losses and Ties.
+              <br><br> Provides a option to Reset the Score.
+              <br><br>
+            </p>
+          </div>
+          <div class="pro-tech">
+            <button class="bon">HTML</button>
+            <button class="bon">CSS</button>
+            <button class="bon">JavaScript</button>
+          </div>
+          <br>
+          <div class="pro-site">
+            <a onclick="document.location='https://soham-2002.github.io/Rock_Paper_Scissors_Game/'" class="bttn"
+              href="#0">VIEW SITE</a>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -110,7 +205,7 @@
           <div class="icon">
             <div class="i-right"><i class="fa fa-user" style="font-size:36px"></i></div>
             <div class="i-right con">
-              <p>name<br>Soham Kundu</p>
+              <p>Name<br>Soham Kundu</p>
             </div>
           </div>
           <div class="icon">
@@ -131,7 +226,7 @@
           <div class="c-me"><b>CONTACT ME</b></div>
           <div class="mb-3">
             <label for="name" class="form-label"><i class="bi bi-envelope-fill"></i>Full Name</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1">
+            <input type="message" class="form-control">
           </div>
           <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label"><i class="bi bi-envelope-fill"></i>Your Email
@@ -142,7 +237,8 @@
             <label for="exampleFormControlTextarea1" class="form-label">Type Your Message</label>
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
           </div>
-          <button class="send-btn"><b>SEND</b></button>
+          <button onclick="document.location='mailto:sohamkundu29012002@gmail.com'"
+            class="send-btn"><b>SEND</b></button>
         </div>
       </div>
     </section>
