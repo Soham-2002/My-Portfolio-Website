@@ -121,7 +121,7 @@ body {
 }
 
 .footer-div {
-  font-size: 30px;
+  font-size: 20px;
   color: white;
 }
 
@@ -339,6 +339,10 @@ h3 {
   font-size: 20px;
 }
 
+.section-second-right p {
+  color: lightsalmon;
+}
+
 .section-second-left img {
   height: 300px;
   --s: 10px;
@@ -363,6 +367,10 @@ h3 {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+
+.something p {
+  color: lightblue;
 }
 
 .section-five-flex-right {
@@ -577,123 +585,199 @@ i {
   padding: 6px;
 }
 
+.section-third-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-.leftsection .buttons {
-  padding: 50px 0;
-}
-
-.leftsection .btn {
-  padding: 12px;
-  background-color: #1e2167;
-  color: white;
-  border: 2px solid white;
-  border-radius: 6px;
-  font-size: 20px;
-  cursor: pointer;
-}
-
-.section-heading {
-  text-align: center;
-}
-
-main hr {
-  border: 0;
-  background: #9c97f1;
-  height: 1px;
-  margin: 60px 84px;
-}
-
-footer {
-  background-color: #0e0e1a;
-}
-
-.secondsection {
-  max-width: 80vw;
-  margin: auto;
   height: 80vh;
 }
 
-.secondsection h1 {
-  font-size: 1.9rem;
-}
-
-.text-gray {
-  color: gray;
-}
-
-.secondsection .box {
-  background-color: white;
-  height: 2px;
-  margin: 56px 0;
+.section-third-left {
   display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+
+  width: 40%;
+  padding: 9vh 0vh 9vh 15vh;
 }
 
-.secondsection .vertical {
-  height: 93px;
-  width: 1px;
-  background-color: white;
-  margin: 0 100px;
+.section-third-left-top p,
+.heading {
+  font-size: 30px;
+  color: crimson;
 }
 
-.image-top {
-  width: 23px;
-  position: relative;
-  top: -32px;
-  left: -9px;
+.section-third-bottom {
+  width: 75%;
+  font-size: 13px;
 }
 
-.vertical-title {
-  position: relative;
-  top: 75px;
-  width: 120px;
-  font-size: 14px;
+.section-third-left-bottom,
+.section-third-r-l {
+  color: lightcoral;
 }
 
-.vertical-desc {
-  position: relative;
-  top: 86px;
-  color: gray;
-  width: 120px;
-  font-size: 9px;
-}
+.section-third-right {
+  width: 60%;
 
-.footer {
   display: flex;
-  justify-content: space-evenly;
-  padding: 23px 112px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.footer ul {
-  list-style: none;
+.section-third-rl {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  margin-top: 15px;
 }
 
-.footer>div {
-  width: 223px;
+.progress {
+  background: rgba(255, 255, 255, 0.1);
+  justify-content: flex-start;
+  border-radius: 100px;
+  align-items: center;
+  position: relative;
+  padding: 0 5px;
+  display: flex;
+  height: 40px;
+  width: 500px;
 }
 
-footer .footer-rights {
-  text-align: center;
-  color: gray;
-  padding: 12px 0;
+.progress-value1 {
+  animation: load1 3s normal forwards;
+  box-shadow: 0 10px 40px -10px white;
+  border-radius: 100px;
+  background: white;
+  height: 30px;
+  width: 0;
 }
 
-.long {
-  height: 500px;
+@keyframes load1 {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 75%;
+  }
 }
-*/
+
+.progress-value2 {
+  animation: load2 3s normal forwards;
+  box-shadow: 0 10px 40px -10px white;
+  border-radius: 100px;
+  background: white;
+  height: 30px;
+  width: 0;
+}
+
+@keyframes load2 {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 80%;
+  }
+}
+
+.progress-value3 {
+  animation: load3 3s normal forwards;
+  box-shadow: 0 10px 40px -10px white;
+  border-radius: 100px;
+  background: white;
+  height: 30px;
+  width: 0;
+}
+
+@keyframes load3 {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 70%;
+  }
+}
+
+.progress-value4 {
+  animation: load4 3s normal forwards;
+  box-shadow: 0 10px 40px -10px white;
+  border-radius: 100px;
+  background: white;
+  height: 30px;
+  width: 0;
+}
+
+@keyframes load4 {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 60%;
+  }
+}
+
+.progress-value5 {
+  animation: load5 3s normal forwards;
+  box-shadow: 0 10px 40px -10px white;
+  border-radius: 100px;
+  background: white;
+  height: 30px;
+  width: 0;
+}
+
+@keyframes load5 {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 85%;
+  }
+}
+
+.progress-value6 {
+  animation: load6 3s normal forwards;
+  box-shadow: 0 10px 40px -10px white;
+  border-radius: 100px;
+  background: white;
+  height: 30px;
+  width: 0;
+}
+
+@keyframes load6 {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 60%;
+  }
+}
+
+.progress-value7 {
+  animation: load7 3s normal forwards;
+  box-shadow: 0 10px 40px -10px white;
+  border-radius: 100px;
+  background: white;
+  height: 30px;
+  width: 0;
+}
+
+@keyframes load7 {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 65%;
+  }
+}
