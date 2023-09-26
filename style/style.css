@@ -62,20 +62,22 @@ h3 {
 .right {
   display: flex;
   align-items: center;
+  width: 50%;
 }
 
 .left {
   font-size: 2.2rem;
-  padding-left: 18vh;
+  width: 50%;
 
   display: flex;
   align-items: center;
+  justify-content: space-around;
 }
 
 .right-ul {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .right-li {
@@ -118,8 +120,13 @@ h3 {
 }
 
 .rightsection {
+  /*
   padding-right: 13vh;
   padding-top: 5vh;
+  */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .rightsection img {

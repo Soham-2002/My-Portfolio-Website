@@ -3,16 +3,68 @@
     background-color: darkgoldenrod;
   }
 
+  .header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 10vh;
+  }
+
+  .left {
+    font-size: 1.8rem;
+    padding-bottom: 15px;
+    padding-top: 5px;
+  }
+
+  .right-li a {
+    font-size: 1rem;
+  }
+
   .firstsection {
     flex-direction: column-reverse;
   }
 
+  .leftsection {
+    font-size: 1.8rem;
+  }
+
+  .myname {
+    font-size: 3rem;
+  }
+
+
+  /*
   #Home {
     height: 10vh;
   }
-
+*/
   .section-second-flexbox {
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .section-third-flex {
+    flex-direction: column;
+  }
+
+  .section-four-flex {
+    flex-wrap: wrap;
+    flex: 50%;
+    align-items: start;
+    justify-content: center;
+  }
+
+  /*
+  .pro {
+    width: 50%;
+  }
+*/
+  .section-five-flex {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
 
