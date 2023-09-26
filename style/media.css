@@ -1,0 +1,19 @@
+@media screen and (max-width: 1200px) {
+  body {
+    background-color: darkgoldenrod;
+  }
+
+  .firstsection {
+    flex-direction: column-reverse;
+  }
+
+  #Home {
+    height: 10vh;
+  }
+
+  .section-second-flexbox {
+    flex-direction: column;
+  }
+
+
+}
