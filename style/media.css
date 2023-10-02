@@ -8,7 +8,7 @@
     align-items: center;
     justify-content: center;
 
-    height: 10vh;
+    height: 20vh;
   }
 
   .left {
@@ -21,8 +21,14 @@
     font-size: 1rem;
   }
 
+  .right-li {
+    list-style: none;
+    margin: 0 15px;
+  }
+
   .firstsection {
     flex-direction: column-reverse;
+    padding-top: 22vh;
   }
 
   .leftsection {
@@ -73,28 +79,33 @@
     align-items: center;
     justify-content: center;
 
-    height: 10vh;
+    height: 20vh;
+  }
+
+  .right {
+    width: 80%;
   }
 
   .left {
+    width: 80%;
+
     font-size: 1.8rem;
     padding-bottom: 15px;
     padding-top: 5px;
-    justify-content: center;
-  }
-
-  .right-ul {
-    display: flex;
-    align-items: start;
-    justify-content: space-between;
   }
 
   .right-li a {
     font-size: 1rem;
   }
 
+  .right-li {
+    list-style: none;
+    margin: 0 12px;
+  }
+
   .firstsection {
     flex-direction: column-reverse;
+    padding-top: 22vh;
   }
 
   .leftsection {
@@ -127,11 +138,20 @@
   }
 
   .section-third-right {
+    width: 100%;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 5vh;
+  }
+
+  .section-third-rl {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
   }
 
   .section-four-flex {
@@ -153,6 +173,48 @@
 
   .send-btn {
     margin-top: 5px;
+  }
+
+  .social-media {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    background: #000;
+    width: 100%;
+  }
+
+  .social-media-ul {
+    position: relative;
+    display: flex;
+  }
+
+  .social-media-li {
+    position: relative;
+    list-style: none;
+    margin: 0 20px;
+    cursor: pointer;
+  }
+
+  .social-media-a {
+    text-decoration: none;
+  }
+
+  .fa-brands {
+    font-size: 2em;
+    color: #222;
+  }
+
+  .social-media-a::before {
+    font-family: "FontAwesome";
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 2em;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
   }
 
   .footer {
@@ -181,22 +243,27 @@
     align-items: center;
     justify-content: center;
 
-    height: 10vh;
+    height: 20vh;
   }
 
   .left {
     font-size: 1.8rem;
     padding-bottom: 15px;
     padding-top: 5px;
-    justify-content: center;
   }
 
   .right-li a {
     font-size: 1rem;
   }
 
+  .right-li {
+    list-style: none;
+    margin: 0 8px;
+  }
+
   .firstsection {
     flex-direction: column-reverse;
+    padding-top: 22vh;
   }
 
   .leftsection {
@@ -229,11 +296,20 @@
   }
 
   .section-third-right {
+    width: 100%;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 5vh;
+  }
+
+  .section-third-rl {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
   }
 
   .section-four-flex {
@@ -257,16 +333,56 @@
     margin-top: 5px;
   }
 
-  .footer {
+  .social-media {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
     height: 8vh;
     background: #000;
+    width: 100%;
+  }
+
+  .social-media-ul {
+    position: relative;
+    display: flex;
+  }
+
+  .social-media-li {
+    position: relative;
+    list-style: none;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+
+  .social-media-a {
+    text-decoration: none;
+  }
+
+  .fa-brands {
+    font-size: 1em;
+    color: #222;
+  }
+
+  .social-media-a::before {
+    font-family: "FontAwesome";
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1em;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+  }
+
+  .footer {
+    height: 5vh;
+    background: #000;
     margin-top: 5vh;
-    margin-left: 0px;
-    margin-right: 0px;
     width: 100%;
   }
 
   .footer-div {
-    font-size: 15px;
+    font-size: 8px;
   }
 }
