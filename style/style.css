@@ -229,7 +229,7 @@ h3 {
 
 .section-third-bottom {
   width: 75%;
-  font-size: 13px;
+  font-size: 15px;
 }
 
 .section-third-left-bottom,
@@ -248,7 +248,7 @@ h3 {
 
 .section-third-rl {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 
