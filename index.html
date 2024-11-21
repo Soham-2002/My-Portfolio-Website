@@ -279,22 +279,24 @@
             </div>
           </div>
           <div class="section-five-flex-right">
-            <div class="c-me"><b>CONTACT</b></div>
-            <div class="mb-3">
-              <label for="name" class="form-label"><i class="bi bi-envelope-fill"></i>Full Name</label>
-              <input type="message" class="form-control">
-            </div>
-            <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label"><i class="bi bi-envelope-fill"></i>Your Email
-                Address</label>
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-            </div>
-            <div class="mb-3">
-              <label for="exampleFormControlTextarea1" class="form-label">Type Your Message</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-            <button onclick="document.location='mailto:sohamkundu29012002@gmail.com'"
-              class="send-btn"><b>SEND</b></button>
+            <form onsubmit="sendEmail(); reset(); return false;">
+              <div class="c-me"><b>CONTACT</b></div>
+              <div class="mb-3">
+                <label for="name" class="form-label"><i class="bi bi-envelope-fill"></i>Full Name</label>
+                <input type="message" class="form-control" required>
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label"><i class="bi bi-envelope-fill"></i>Your Email
+                  Address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Type Your Message</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+              </div>
+              <button type="submit" class="send-btn"><b>SEND</b></button>
+              <!-- onclick="document.location='mailto:sohamkundu29012002@gmail.com'" -->
+            </form>
           </div>
         </div>
       </section>
@@ -331,6 +333,21 @@
   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
   <!-- Setup and start animation! -->
   <script src="script/script.js"></script>
+
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+    function sendEmail(){
+      Email.send({
+        SecureToken:"ad38d373-091f-4a0f-b5ec-f09ac91f3767",
+        To: 'sohamkundu29012002@gmail.com',
+        From: document.getElementById("exampleFormControlInput1").value,
+        Subject: "New Contact From Enquiry",
+        Body: "And this is the body"
+      }).then(
+        message => alert("Message Sent Succesfully.")
+      );
+    }
+  </script>
 </body>
 
 </html>
